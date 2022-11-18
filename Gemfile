@@ -1,9 +1,7 @@
-# frozen_string_literal: true
-
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.6.3'
+ruby '3.1.2'
 
 gem 'puma', '~> 3.11'
 gem 'rails', '~> 6.0.0'
@@ -21,7 +19,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.8'
   gem 'rspec_junit_formatter'
   gem 'rubocop', '= 0.74', require: false
-  gem 'sqlite3'
+  gem 'pg'
 end
 
 group :development do
